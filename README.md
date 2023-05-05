@@ -36,17 +36,30 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Git commands
 
 NextJs-Portfolio
+
 Adding to git
+
 git init
+
 git add .
+
 git commit -m "message"
+
 git remote add origin https://NigelGunawardene@github.com/NigelGunawardene/NextJs-Portfolio.git <- get this URL from github.com after creating a repo and insert username
+
 git push -u -f origin main/master
 
+
 from github this worked - 
+
 git init
+
 git add .
+
 git commit -m "first commit"
+
 git branch -M main
+
 git remote add origin https://github.com/NigelGunawardene/NextJs-Portfolio.git
+
 git push -u origin main

@@ -49,8 +49,7 @@ git remote add origin https://NigelGunawardene@github.com/NigelGunawardene/NextJ
 
 git push -u -f origin main/master
 
-
-from github this worked - 
+from github this worked -
 
 git init
 
@@ -76,13 +75,13 @@ Check for a .eslintrc.json file at the very root level of your project. This fil
 You can choose from hundreds of rules and add as many rule sets as you want or need in your project. For example, add the following code to this file:
 
 {
-  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
-  "globals": {
-    "React": "readonly"
-  },
-  "rules": {
-    "no-unused-vars": "warn"
-  }
+"extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+"globals": {
+"React": "readonly"
+},
+"rules": {
+"no-unused-vars": "warn"
+}
 }
 In the example above, React has been added as a global package for this project. By doing so, you are ensuring that React is always defined in functional components and JSX code, even if you haven’t explicitly mentioned import React from 'react' at the top of the file.
 
@@ -98,9 +97,9 @@ Once the installation has been finished, create two files at the root level — 
 The .prettierrc file will contain all the Prettier rules that you are introducing in the project. The following code demonstrates a few rules you can add as JSON key-value pairs:
 
 {
-  "tabWidth": 2,
-  "semi": true,
-  "singleQuote": true
+"tabWidth": 2,
+"semi": true,
+"singleQuote": true
 }
 The .prettierignore file will contain the names of those files and folders that you do not want Prettier to run and analyze. For example, you would never want to run Prettier on the node_modules folder, dist folder, package.json, and other such files. Therefore, add paths to these files in .prettierignore like so:
 
@@ -114,9 +113,9 @@ If you run npm run prettier --write and everything runs correctly, you will see 
 
 Running this command every time can be cumbersome, so it’s better to put this in your package.json file as a script:
 
- "scripts: {
-    "prettier": "prettier --write ."
-  }
+"scripts: {
+"prettier": "prettier --write ."
+}
 Now, all you have to do is type npm run prettier. You can also configure your VS Code to run Prettier whenever you hit Cmd + S.
 
 With all this set up, now would be a good time to commit changes to your repo. Make sure to follow proper naming conventions while committing changes. Conventional Commits provides a helpful resource you can follow while handling Git naming conventions.
